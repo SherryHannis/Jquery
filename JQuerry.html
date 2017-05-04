@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>JQuerry ID Selector</title>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+    </script>
+
+     <script>
+        $(document).ready(function () {
+             $("p").click(function () {
+                       $(this).hide();
+                                       });
+         $("button").click(function () {
+              // $("#test").hide();
+              // $(".testClass").hide();
+               $(".testClass").toggle();
+                                        });
+         
+        });
+
+       </script>
+       
+    <style>
+        /*Universal Selectors*/
+        * {
+            color: #122594;
+            background: #daf597;
+        }
+
+        /*Class Selectors...................................................*/
+        .lightgreen {
+            color: #99d88c;
+        }
+
+        h1.lightgreen {
+            color: #99d88c;
+        }
+
+        }
+    </style>
+    </head>
+    <body>
+        <h1 class="testClass"> H1 Header !</h1>
+        <div id="test">
+            <h3> I am a h3 in a Div</h3>
+        </div>
+        <p class="testClass"> Paragraph with testClass! </p>
+        <p><br /> <b>Click to make this disappear!</b></p>
+        <p><br /> <b>Click to make this disappear too!</b></p>
+                <button type=" button"> Click on me </button>
+
+       
+
+    </body>
+</html>
